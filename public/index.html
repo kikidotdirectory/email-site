@@ -20,8 +20,18 @@
       </p>
 
       <form method="post" action="/api/subscribe">
-        <label for="email">the email space</label>
-        <input id="email" type="email" name="email" value="">
+        <div>
+          <label for="email">the email space</label>
+          <input id="email" type="email" name="email" value="">
+        </div>
+        <div>
+          <label
+            class="sentience-check"
+            for="sentience"
+            aria-label="please type cicada (plural)"
+          >please type "<span class="sentience-term">cicada</span>"</label>
+          <input type="text" id="sentience" name="sentience">
+        </div>
         <button type="submit">sign up</button>
       </form>
       <aside>

@@ -20,9 +20,22 @@ label {
   display: block;
 }
 form {
+  border: solid 1px #dadada;
   margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: fit-content;
+  border-radius: 6px;
+}
+input {
+  display: block;
 }
 aside {
   font-size: 0.95rem;
   opacity: 0.5;
+}
+.sentience-term::after {
+  content: "s";
 }
