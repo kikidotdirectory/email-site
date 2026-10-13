@@ -1,0 +1,26 @@
+{
+  "name": "email-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy",
+    "db:migrate": "wrangler d1 migrations apply signups --remote",
+    "export": "wrangler d1 execute signups --remote --json --command \"SELECT email FROM emails ORDER BY created_at\" | jq -r \".[0].results[].email\" > emails.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.11.2",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.11.2",
+  "type": "module",
+  "devDependencies": {
+    "wrangler": "^4.149.0"
+  }
+}

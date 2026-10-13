@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light dark;
+}
+body {
+  padding: 2rem;
+  background-color: light-dark(#fff, rgb(28, 28, 28));
+  color: light-dark(#121212, #eee);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+a {
+  color: light-dark(#0645ad, #8ab4f8);
+}
+.content-wrapper {
+  max-width: 40ch;
+}
+label {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+form {
+  margin-bottom: 1rem;
+}
+aside {
+  font-size: 0.95rem;
+  opacity: 0.5;
+}
