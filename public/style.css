@@ -8,6 +8,9 @@ body {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+.content-wrapper, p, input, aside, label {
+  position: relative;
+}
 a {
   color: light-dark(#0645ad, #8ab4f8);
 }
